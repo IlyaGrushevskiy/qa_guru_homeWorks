@@ -7,8 +7,8 @@ import static utils.RandomUtils.*;
 
 public class i06_pullRequest {
 
-    String firstName = getRandomString(5),
-            lastName = getRandomString(10),
+    String firstName = "Ivan",
+            lastName = "Ivanov",
             userEmail = getRandomEmail(),
             gender = "Male",
             userNumber = getRandomPhone(),
