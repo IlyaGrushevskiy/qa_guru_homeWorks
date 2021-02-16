@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationFormTestJavaFaker {
+public class i04_RegistrationFormTestJavaFaker {
 
     Faker faker = new Faker();
 

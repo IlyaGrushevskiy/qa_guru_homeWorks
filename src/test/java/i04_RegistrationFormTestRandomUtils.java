@@ -4,7 +4,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static utils.RandomUtils.*;
 
-public class RegistrationFormTestRandomUtils {
+public class i04_RegistrationFormTestRandomUtils {
 
     String firstName = getRandomString(5),
             lastName = getRandomString(10),
