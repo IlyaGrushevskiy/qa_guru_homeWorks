@@ -32,7 +32,7 @@ public class i04_RegistrationFormTestRandomUtils {
         $x("//div[@class='practice-form-wrapper']").shouldHave(text("Student Registration Form"));
 
         // заполняем регистрационную форму
-        $x("//input[@id='firstName']").val(firstName);
+        $x("#firstName").val(firstName);
         $x("//input[@id='lastName']").val(lastName);
         $x("//input[@id='userEmail']").val(userEmail);
         $x("//input[@name='gender'][@value='"+gender+"']/following-sibling::label").click();
@@ -40,7 +40,7 @@ public class i04_RegistrationFormTestRandomUtils {
 
         $x("//input[@id='dateOfBirthInput']").click();
         if (dateOfBirthDay.length() == 1) dateOfBirthDay = "0" + dateOfBirthDay;
-        $x("//select[@class='react-datepicker__year-select']").selectOption(dateOfBirthYear);
+        $(".react-datepicker__year-select").selectOption(dateOfBirthYear);
         $x("//select[@class='react-datepicker__month-select']").selectOption(dateOfBirthMonth);
         $x("//div[contains(@class,'react-datepicker__day--0"+dateOfBirthDay+"')]").click();
 
